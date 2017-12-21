@@ -16,7 +16,7 @@
 title: QihooGearTeam's Blog
 author: QihooGearTeam
 description: QihooGearTeam, Cloud Security Team of Qihoo.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://QihooGearTeam.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
 timezone: UTC
