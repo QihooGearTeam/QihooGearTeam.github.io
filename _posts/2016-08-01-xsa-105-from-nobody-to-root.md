@@ -3,11 +3,15 @@ layout: post
 title: "Xen攻击第一篇：XSA-105--从nobody到root"
 ---
 
-**原链: <http://blog.quarkslab.com/xen-exploitation-part-1-xsa-105-from-nobody-to-root.html>
-作者: Jeremie Boutoille
-译者: Au2o3t@GearTeam
-审校: Terence@GearTeam
-本文介绍 Xen-105(CVE-2014-7155)的利用,介绍并演示在 Linux 4.4.5 上的完整利用开发。**
+**原链: <http://blog.quarkslab.com/xen-exploitation-part-1-xsa-105-from-nobody-to-root.html>**
+
+**作者: Jeremie Boutoille**
+
+**译者: Au2o3t@GearTeam**
+
+**审校: Terence@GearTeam**
+
+**本文介绍 Xen-105(CVE-2014-7155)的利用,介绍并演示在 Linux 4.4.5 上的完整利用开发。**
 
 Xen作现代虚拟化平台的一个重要代表,它的安全性值得全世界黑客的关注。本文将在已经披露的编号为XSA-105(CVE-2014-7155)的Xen漏洞的基础上进行攻击尝试,尽管 Andrei Lutas 曾撰文描述过该漏洞的原理和触发方法(2)(3)(4),但我们并未发现任何该漏洞的公开利用。
 所以我们将在本文对该漏洞作详细的介绍并演示如何通过这个漏洞在 4.4.5 的Linux平台下进行完成的漏洞利用(该方法也可能工作在其它版本上),从nobody用户权限到root权限的华丽提升。
@@ -224,14 +228,23 @@ commit_creds(prepare_kernel_cred(0))获取根权限,如果设置了 kptr_restric
 之后的博文将谈论从客户机到宿主机的逃逸及利用过程,敬请关注!
 
 (1) (1, 2) <http://xenbits.xen.org/xsa/advisory-105.html>
+
 (2) (1, 2, 3, 4, 5, 6) <https://labs.bitdefender.com/wp-content/uploads/downloads/2014/10/Gaining-kernel-privileges-using-the-Xen-emulator.pdf>
+
 (3) <https://www.cert-ro.eu/files/doc/896_20141104131145076318500_X.pdf>
+
 (4) <https://labs.bitdefender.com/2014/10/from-ring3-to-ring0-xen-emulator-flaws/>
+
 (5) <http://wiki.xen.org/wiki/Xen_Project_Software_Overview#Guest_Types>
+
 (6) <http://wiki.xenproject.org/wiki/XenParavirtOps>
+
 (7) <http://wiki.xen.org/wiki/Dom0>
+
 (8) <http://wiki.xen.org/wiki/Dom0_Kernels_for_Xen>
+
 (9) <https://wiki.archlinux.org/index.php/installation_guide>
+
 (10) (1, 2) <http://download.intel.com/design/processor/manuals/253668.pdf>
 
 [1]: https://p2.ssl.qhimg.com/t0138cb7c8a3541416d.png
