@@ -3,7 +3,7 @@ layout: post
 title: "深夜出炉：httpoxy远程代理感染漏洞浅析（更新poc）"
 ---
 
-**Author: cyg07@360信息安全部**
+**Author: cyg07@GearTeam**
 
 ![][0]
 

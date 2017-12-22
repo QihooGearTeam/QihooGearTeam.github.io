@@ -3,7 +3,7 @@ layout: post
 title: "某僵尸网络被控端恶意样本分析"
 ---
 
-**Author: 360信息安全部-王阳东(云安全研究员)**
+**Author: K@GearTeam**
 
 ![][0]
 
