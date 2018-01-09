@@ -3,7 +3,7 @@ layout: post
 title: "菜谈安全：CloudBleed事件感想录"
 ---
 
-![1]
+![][1]
 
 **Author: cyg07@GearTeam**
 
