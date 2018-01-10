@@ -83,7 +83,7 @@ Filename从Content-Disposition获取。
 
 相同的触发点采用不同的绕过方式，这种事情已经不是第一次发生了。因为Struts2的交互性和扩展性，同一个触发点有可能有多个绕过方式。而这种漏洞的产生，也告诉我们，想要拿全cve，不仅要关注官方的patch，也要对数据流有比较全面的了解。以上分析为个人分析，感谢360GearTeam小伙伴们的支持。
 
-参考文献
+# 参考文献
 
 1. <https://community.hpe.com/t5/Security-Research/Struts2-046-A-new-vector/ba-p/6949723#>
 2. <http://bobao.360.cn/learning/detail/3571.html>
