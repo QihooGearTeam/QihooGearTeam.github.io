@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "探索QEMU-KVM中PIO处理的奥秘"
+title: "QEMU内存虚拟化源码分析"
 ---
 
 ![][1]
@@ -327,7 +327,11 @@ void memory_region_transaction_commit(void)
             abort();                                                    
         }                                                               
     } while (0)
+```
+
 MEMORY_LISTENER_CALL_GLOBAL对memory_listeners上的各个MemoryListener调用指定函数。commit中最重要的是address_space_update_topology调用。
+
+```c
 static void address_space_update_topology(AddressSpace *as)
 {
     FlatView *old_view = address_space_get_flatview(as);
